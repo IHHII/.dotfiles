@@ -29,6 +29,21 @@ dotfiles:
   d_swaylock:
     src: config/swaylock
     dst: ~/.config/swaylock
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+  d_sddm.conf.d:
+    src: etc/sddm.conf.d
+    dst: /etc/sddm.conf.d
+  f_pacman.conf:
+    src: etc/pacman.conf
+    dst: /etc/pacman.conf
+  f_mirrorlist:
+    src: etc/pacman.d/mirrorlist
+    dst: /etc/pacman.d/mirrorlist
+  f_backlight.rules:
+    src: etc/udev/rules.d/backlight.rules
+    dst: /etc/udev/rules.d/backlight.rules
 profiles:
   arch-hyprland:
     dotfiles:
@@ -39,3 +54,8 @@ profiles:
     - d_kitty
     - d_dunst
     - d_swaylock
+    - d_nvim
+    - d_sddm.conf.d
+    - f_pacman.conf
+    - f_mirrorlist
+    - f_backlight.rules
