@@ -120,9 +120,7 @@ alias vzsh="vim ~/.zshrc" # edit zsh config
 alias szsh="source ~/.zshrc" # source the zshrc file
 
 # quick command
-alias vim="nvim" # replace vim to nvim
 alias pdf="zathura"
-alias epub="zathura"
 
 # install software
 alias installaur="sudo pacman -S yay paru"
