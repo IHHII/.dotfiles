@@ -1,0 +1,41 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  d_hypr:
+    src: config/hypr
+    dst: ~/.config/hypr
+  d_waybar:
+    src: config/waybar
+    dst: ~/.config/waybar
+  d_wofi:
+    src: config/wofi
+    dst: ~/.config/wofi
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
+  d_dunst:
+    src: config/dunst
+    dst: ~/.config/dunst
+  d_swaylock:
+    src: config/swaylock
+    dst: ~/.config/swaylock
+profiles:
+  arch-hyprland:
+    dotfiles:
+    - f_zshrc
+    - d_hypr
+    - d_waybar
+    - d_wofi
+    - d_kitty
+    - d_dunst
+    - d_swaylock
