@@ -41,9 +41,6 @@ dotfiles:
   f_backlight.rules:
     src: etc/udev/rules.d/backlight.rules
     dst: /etc/udev/rules.d/backlight.rules
-  d_nvim:
-    src: config/nvim
-    dst: ~/.config/nvim
   f_asoundrc:
     src: asoundrc
     dst: ~/.asoundrc
@@ -64,6 +61,5 @@ profiles:
     - f_pacman.conf
     - f_mirrorlist
     - f_backlight.rules
-    - d_nvim
     - f_asoundrc
     - d_modprobe.d
