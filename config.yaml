@@ -44,6 +44,12 @@ dotfiles:
   d_nvim:
     src: config/nvim
     dst: ~/.config/nvim
+  f_asoundrc:
+    src: asoundrc
+    dst: ~/.asoundrc
+  d_modprobe.d:
+    src: etc/modprobe.d
+    dst: /etc/modprobe.d
 profiles:
   arch-hyprland:
     dotfiles:
@@ -59,3 +65,5 @@ profiles:
     - f_mirrorlist
     - f_backlight.rules
     - d_nvim
+    - f_asoundrc
+    - d_modprobe.d
