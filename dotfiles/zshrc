@@ -83,13 +83,13 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/home/lostecho/.local/bin:$PATH"
+export PATH="/home/lostecho/.local/bin:/home/lostecho/.cargo/bin:$PATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 export EDITOR=vim
-# export all_proxy=http://192.168.31.40:7890
-# export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
+#export all_proxy=http://192.168.31.40:7890
+#export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -123,6 +123,22 @@ alias szsh="source ~/.zshrc" # source the zshrc file
 
 # quick command
 alias pdf="zathura"
+
+# remotedesktop
+alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f"
+#alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.139 /f"
+
+# pacman command
+#alias pins="sudo pacman -S"
+#alias psea="sudo pacman -Ss"
+#alias puni="sudo pacman -Rsn"
+alias yins="yay -S"
+alias ysea="yay -Ss"
+alias yuni="yay -Rsn"
+alias pins="paru -S"
+alias psea="paru -Ss"
+alias puni="paru -Rsn"
+alias psyuu="paru -Syuu"
 
 # install software
 alias installaur="sudo pacman -S yay paru"
