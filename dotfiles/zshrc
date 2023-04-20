@@ -148,3 +148,8 @@ alias installnotes="yay -S logseq-desktop obsidian-appimage zathura zathura-pdf-
 alias installsddm="yay -S sddm sddm-sugar-candy-git"
 alias inatallother="yay -S blueman nm-connection-editor xf86-video-intel 7-zip-full neofetch acpilight google-chrome"
 alias installcode="sudo pacman -S ruby go jdk17-openjdk python-pip npm clang cargo"
+
+# read books
+alias jvm=""
+alias java8sz=""
+alias postgresql=""
