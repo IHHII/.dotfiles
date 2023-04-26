@@ -127,6 +127,7 @@ alias pdf="zathura"
 # remotedesktop
 alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f"
 #alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.139 /f"
+alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:rdp.chipdale.top /f"
 
 # pacman command
 #alias pins="sudo pacman -S"
