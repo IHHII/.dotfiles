@@ -73,7 +73,8 @@ ZSH_THEME="zhann"
 plugins=(
 	git
 	sudo
-	zsh-syntax-highlighting
+	#zsh-syntax-highlighting
+	F-Sy-H
 	zsh-autosuggestions
 	history-substring-search
 )
