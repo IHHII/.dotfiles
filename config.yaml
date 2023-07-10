@@ -11,31 +11,12 @@ dotfiles:
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
-  d_hypr:
-    src: config/hypr
-    dst: ~/.config/hypr
-  d_waybar:
-    src: config/waybar
-    dst: ~/.config/waybar
-  d_wofi:
-    src: config/wofi
-    dst: ~/.config/wofi
-  d_kitty:
-    src: config/kitty
-    dst: ~/.config/kitty
-  d_dunst:
-    src: config/dunst
-    dst: ~/.config/dunst
-  d_swaylock:
-    src: config/swaylock
-    dst: ~/.config/swaylock
+  d_oh-my-zsh:
+    src: oh-my-zsh
+    dst: ~/.oh-my-zsh
+    chmod: '751'
 profiles:
-  lostecho-nuc11pahi5:
+  penguin:
     dotfiles:
     - f_zshrc
-    - d_hypr
-    - d_waybar
-    - d_wofi
-    - d_kitty
-    - d_dunst
-    - d_swaylock
+    - d_oh-my-zsh

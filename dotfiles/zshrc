@@ -71,7 +71,7 @@ ZSH_THEME="zhann"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
+	#git
 	sudo
 	#zsh-syntax-highlighting
 	F-Sy-H
@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/home/lostecho/.local/bin:/home/lostecho/.cargo/bin:$PATH"
+export PATH="/home/lonelinster/.local/bin:/home/lonelinster/.cargo/bin:/home/lonelinster/.spicetify:$PATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -126,9 +126,10 @@ alias szsh="source ~/.zshrc" # source the zshrc file
 alias pdf="zathura"
 
 # remotedesktop
-alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f"
-#alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.139 /f"
-alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:rdp.chipdale.top /f"
+#alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f"
+alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
+alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f"
+#alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:rdp.chipdale.top /f"
 
 # pacman command
 #alias pins="sudo pacman -S"
@@ -155,3 +156,16 @@ alias installcode="sudo pacman -S ruby go jdk17-openjdk python-pip npm clang car
 alias jvm=""
 alias java8sz=""
 alias postgresql=""
+
+# activate python venv
+alias pyvenv="source ~/pyvenv/bin/activate"
+alias depyvenv="deactivate"
+
+# git alias
+alias gup="git pull --rebase"
+alias gall="git add . && git commit -a -m 'update' && git push"
+
+# init commandy
+
+#fcitx5 &
+export PATH=$PATH:/home/lonelinster/.spicetify
