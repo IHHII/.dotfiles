@@ -29,8 +29,14 @@ dotfiles:
   d_swaylock:
     src: config/swaylock
     dst: ~/.config/swaylock
+  f_software:
+    src: software
+    dst: ~/.software
+  d_oh-my-zsh:
+    src: oh-my-zsh
+    dst: ~/.oh-my-zsh
 profiles:
-  lostecho-nuc11pahi5:
+  arch:
     dotfiles:
     - f_zshrc
     - d_hypr
@@ -39,3 +45,5 @@ profiles:
     - d_kitty
     - d_dunst
     - d_swaylock
+    - f_software
+    - d_oh-my-zsh

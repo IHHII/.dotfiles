@@ -1,14 +1,14 @@
 #!/usr/bin/bash
 
 #start swwww
-swww query || swww init
+swww init
 
 #figure out which waybar theme is set
 THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f2)
 
 #show the correct wallpapper based on the theme
 if [ $THEMEIS == "dark.css" ]; then
-    swww img -o eDP-1 ~/.config/hypr/wallpaper-dark.jpg && swww img -o DP-1 ~/.config/hypr/wallpaper-dark.jpg
+    swww img -o DP-2 ~/.config/hypr/wallpaper-dark.jpg
 else
-    swww img -o eDP-1 ~/.config/hypr/wallpaper.jpg && swww img -o DP-1 ~/.config/hypr/wallpaper.jpg
+    swww img -o DP-2 ~/.config/hypr/wallpaper.jpg
 fi

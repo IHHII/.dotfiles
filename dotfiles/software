@@ -1,0 +1,14 @@
+# pacman
+archlinuxcn-keyring yay paru hyprland-git 
+zsh ketty dunst polkit-kde-agent wofi xdg-desktop-portal-hyprland 
+waybar-hyprland-git curl sddm ttf-jetbrains-mono-nerd noto-fonts-emoji
+swaylock-effects udiskie 
+way-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont 
+alsa-utils pulseaudio pamixer pavuconrtol blueman network-manager-applet btop
+fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool
+obsidain neofetch
+
+plasma-desktop
+
+# yay
+google-chrome dotdrop swww wlogout logseq-desktop-wayland-bin

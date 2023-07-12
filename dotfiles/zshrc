@@ -121,6 +121,7 @@ alias dotdrop="dotdrop --cfg=~/.dotfiles/config.yaml"
 alias vhypr="vim ~/.config/hypr/hyprland.conf" # edit hyprland config
 alias vzsh="vim ~/.zshrc" # edit zsh config
 alias szsh="source ~/.zshrc" # source the zshrc file
+alias hyprloadreins="curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash"
 
 # quick command
 alias pdf="zathura"
