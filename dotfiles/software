@@ -1,14 +1,20 @@
-# pacman
-archlinuxcn-keyring yay paru hyprland-git 
-zsh ketty dunst polkit-kde-agent wofi xdg-desktop-portal-hyprland 
-waybar-hyprland-git curl sddm ttf-jetbrains-mono-nerd noto-fonts-emoji
-swaylock-effects udiskie 
-way-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont 
-alsa-utils pulseaudio pamixer pavuconrtol blueman network-manager-applet btop
-fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool
-obsidain neofetch
+# core
+archlinuxcn-keyring yay paru zsh curl \
+hyprland xdg-desktop-portal-hyprland \
+kitty dunst swaylock-effects udiskie \
+polkit-kde-agent wofi waybar-hyprland-git sddm btop \
+ttf-jetbrains-mono-nerd noto-fonts-emoji wqy-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont \
+alsa-utils pulseaudio pamixer pavucontrol blueman network-manager-applet \
+fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool \
+obsidian neofetch notion-app-enhanced vscodium-bin 
 
+# other
 plasma-desktop
 
-# yay
-google-chrome dotdrop swww wlogout logseq-desktop-wayland-bin
+# yay/paru
+google-chrome dotdrop swww wlogout logseq-desktop-wayland-bin anytype-bin
+
+
+ghp_
+
+9ykTi91rAkLtVnxhBcLssmIZaUxVvR2hWODQ
