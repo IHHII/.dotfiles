@@ -32,9 +32,6 @@ dotfiles:
   f_software:
     src: software
     dst: ~/.software
-  d_oh-my-zsh:
-    src: oh-my-zsh
-    dst: ~/.oh-my-zsh
 profiles:
   arch:
     dotfiles:
@@ -46,4 +43,3 @@ profiles:
     - d_dunst
     - d_swaylock
     - f_software
-    - d_oh-my-zsh

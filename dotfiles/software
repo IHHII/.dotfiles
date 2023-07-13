@@ -1,12 +1,16 @@
 # core
 archlinuxcn-keyring yay paru zsh curl \
 hyprland xdg-desktop-portal-hyprland \
-kitty dunst swaylock-effects udiskie \
+kitty dunst swaylock-effects udiskie dolphin\
 polkit-kde-agent wofi waybar-hyprland-git sddm btop timeshift \
 ttf-jetbrains-mono-nerd noto-fonts-emoji wqy-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont \
-alsa-utils pulseaudio pamixer pavucontrol blueman network-manager-applet \
+alsa-utils pulseaudio pulseaudio-alsa pamixer pavucontrol blueman network-manager-applet ufw \
 fcitx5-im fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool fcitx5-pinyin-zhwiki \
-obsidian neofetch notion-app-enhanced neovim github-desktop-bin spotify
+obsidian neofetch notion-app-enhanced neovim github-desktop-bin spotify motrix aria2 \
+kate okular
+
+# develop
+mariadb mariadb-libs
 
 # not necessray
 clang go python-pip cargo npm jdk-openjdk 
@@ -17,7 +21,8 @@ plasma-desktop
 # yay/paru
 fcitx5-input-support visual-studio-code-bin \
 google-chrome dotdrop swww wlogout logseq-desktop-wayland-bin anytype-bin \
-jetbrains-toolbox
+jetbrains-toolbox typora-free aliyunpan-odomu \
+ttf-wps-fonts wps-office-cn
 
 
 ghp_
