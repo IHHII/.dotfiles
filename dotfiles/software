@@ -35,6 +35,13 @@ git config --global user.name lostecho
 git config --global user.email 752549025@qq.com
 git config --global credential.helper store
 
+# git repositories
+
+https://github.com/selfteaching/the-craft-of-selfteaching.git
+https://github.com/xiaolai/regular-investing-in-box.git
+https://github.com/xiaolai/everyone-can-use-english.git
+https://github.com/xiaolai/time-as-a-friend.git
+
 # hyprload
 curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash
 
