@@ -7,8 +7,10 @@ swww init
 THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f2)
 
 #show the correct wallpapper based on the theme
-if [ $THEMEIS == "dark.css" ]; then
-    swww img -o DP-2 ~/.config/hypr/wallpaper-dark.jpg
-else
-    swww img -o DP-2 ~/.config/hypr/wallpaper.jpg
-fi
+#if [ $THEMEIS == "dark.css" ]; then
+#    swww img -o DP-2 ~/.config/hypr/wallpaper-dark.jpg
+#else
+#    swww img -o DP-2 ~/.config/hypr/wallpaper.jpg
+#fi
+
+swww img -o DP-2 ~/.config/hypr/wallpaper-dark.jpg

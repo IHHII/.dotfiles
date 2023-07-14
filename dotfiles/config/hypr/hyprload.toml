@@ -1,9 +1,10 @@
 plugins = [
-   "horriblename/hyprland-touch-gestures",
-    # Installs the plugin from https://github.com/Duckonaut/split-monitor-workspaces
     "Duckonaut/split-monitor-workspaces",
-    # A more explicit definition of the git install
-    { git = "https://github.com/Duckonaut/split-monitor-workspaces", branch = "main", name = "split-monitor-workspaces" },
-    # Installs the same plugin from a local folder
-    { local = "/home/duckonaut/repos/split-monitor-workspaces" },
+    "zakk4223/hyprNStack",
+    "zakk4223/hyprRiver",
+    "VortexCoyote/hyprfocus",
+    "ItsDrike/hyprland-dwindle-autogroup",
+    "outfoxxed/hy3",
+    "horriblename/hyprland-touch-gestures",
+    "Duckonaut/split-monitor-workspaces",
 ]

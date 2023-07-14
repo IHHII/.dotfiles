@@ -1,21 +1,24 @@
 # core
 archlinuxcn-keyring yay paru zsh curl \
 hyprland xdg-desktop-portal-hyprland \
-kitty dunst swaylock-effects udiskie dolphin\
+kitty mako swaylock-effects udiskie thunar\
 polkit-kde-agent wofi waybar-hyprland-git sddm btop timeshift \
 ttf-jetbrains-mono-nerd noto-fonts-emoji wqy-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont \
-alsa-utils pulseaudio pulseaudio-alsa pamixer pavucontrol blueman network-manager-applet ufw \
+blueman network-manager-applet ufw \
 fcitx5-im fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool fcitx5-pinyin-zhwiki \
 obsidian neofetch notion-app-enhanced neovim github-desktop-bin spotify motrix aria2 \
-kate okular
+kate okular jupyterlab \
+
+# sound
+alsa-utils pulseaudio pulseaudio-alsa pamixer pavucontrol
 
 # develop
 mariadb mariadb-libs
 
-# not necessray
+# programming language
 clang go python-pip cargo npm jdk-openjdk 
 
-# other
+# pacman other
 plasma-desktop
 
 # yay/paru
@@ -23,6 +26,23 @@ fcitx5-input-support visual-studio-code-bin \
 google-chrome dotdrop swww wlogout logseq-desktop-wayland-bin anytype-bin \
 jetbrains-toolbox typora-free aliyunpan-odomu \
 ttf-wps-fonts wps-office-cn
+
+# yay other
+sddm-config-editor-git hyprland-autoname-workspace-git
+
+# git init
+git config --global user.name lostecho
+git config --global user.email 752549025@qq.com
+git config --global credential.helper store
+
+# hyprload
+curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/F-Sy-H
+
 
 
 ghp_
