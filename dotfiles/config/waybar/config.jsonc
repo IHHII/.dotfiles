@@ -173,10 +173,10 @@
     },
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%  {format_source}",
         "format-bluetooth-muted": " {icon}  {format_source}",
-        "format-muted": "婢 {format_source}",
+        "format-muted": " ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -189,8 +189,8 @@
             "default": [""]
         },
         "on-click": "pavucontrol",
-        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
     },
     "pulseaudio_pamixer": {
         "format": "{icon}",
