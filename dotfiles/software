@@ -25,7 +25,8 @@ plasma-desktop
 fcitx5-input-support visual-studio-code-bin \
 google-chrome dotdrop swww wlogout logseq-desktop-wayland-bin anytype-bin \
 jetbrains-toolbox typora-free aliyunpan-odomu \
-ttf-wps-fonts wps-office-cn
+ttf-wps-fonts wps-office-cn \
+linuxqq wechat-uos
 
 # yay other
 sddm-config-editor-git hyprland-autoname-workspace-git
