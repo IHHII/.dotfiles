@@ -14,3 +14,4 @@ THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f2)
 #fi
 
 swww img -o DP-2 ~/.config/hypr/wallpaper-dark.jpg
+swww img -o eDP-1 ~/.config/hypr/wallpaper-dark.jpg

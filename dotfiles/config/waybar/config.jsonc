@@ -8,23 +8,26 @@
     "height": 30,
     "modules-left": [
         "custom/launcher",
+        "clock",
         "wlr/workspaces",
-        "custom/playerctl",
-        "custom/playerlabel"
+        "wlr/taskbar",
+        "hyprland/window"
+        //"custom/playerctl",
+        //"custom/playerlabel"
     ],
-    "modules-center": [
-        "hyprland/window",
-        "wlr/taskbar"
+    //"modules-center": [
+        //"hyprland/window",
+        //"wlr/taskbar"
 
-    ],
+    //],
     "modules-right": [
         "custom/weather",
         //"custom/weather_sway",
         //"network",
-        "idle_inhibitor",
+        //"idle_inhibitor",
         "cpu",
         "memory",
-        "disk",
+        //"disk",
         "temperature",
         "battery",
         //"custom/PBPbattery",
@@ -33,12 +36,12 @@
         //"pulseaudio_pamixer#microphone",
         //"custom/keyboard-layout",
         "backlight#icon",
-        "backlight#value",
+        //"backlight#value",
         "custom/updates",
-        "clock",
+        //"clock",
         "tray",
         //"custom/power",
-        "custom/lock_screen",
+        //"custom/lock_screen",
         "custom/light_dark"
     ],
     "custom/launcher": {
@@ -192,9 +195,9 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
@@ -207,10 +210,10 @@
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
-        "format-bluetooth": "{icon} {volume}%  {format_source}",
-        "format-bluetooth-muted": " {icon}  {format_source}",
-        "format-muted": " ",
-        "format-source": "{volume}% ",
+        "format-bluetooth": " {volume}%", //"{icon}  {volume}%", //{format_source}",
+        "format-bluetooth-muted": " ", //" {icon}", //{format_source}",
+        "format-muted": "",
+        "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
@@ -269,6 +272,7 @@
     },
     "backlight#icon": {
         "format": "{icon}",
+        "format": "{icon} {percent}%",
         "format-icons": [""],
         "on-scroll-down": "brightnessctl -c backlight set 1%-",
         "on-scroll-up": "brightnessctl -c backlight set +1%"

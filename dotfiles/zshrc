@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$HOME/.npm/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -88,6 +88,8 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 export EDITOR=nvim
+#export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 #export all_proxy=http://192.168.31.40:7890
 #export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 
@@ -111,7 +113,8 @@ export EDITOR=nvim
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # proxy alias
-alias proxy="export all_proxy=http://192.168.31.40:7890" # for home network enviroment
+alias proxy="export all_proxy=http://127.0.0.1:7890" # for home network enviroment
+#alias proxy="export all_proxy=http://192.168.31.40:7890" # for home network enviroment
 alias noproxy="export all_proxy=''" # cancel proxy mode
 
 # dordrop config file alias
@@ -128,8 +131,13 @@ alias hyprloadreload="curl -sSL https://raw.githubusercontent.com/Duckonaut/hypr
 alias pdf="zathura"
 
 # remotedesktop
-alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f"
-alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f"
+#alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f /sound"
+alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
+alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound"
+
+# git alias
+alias gup="git pull --rebase"
+alias gall="git add . && git commit -a -m 'update' && git push"
 
 # install software
 alias installpac="sudo pacman -S archlinuxcn-keyring yay paru zsh curl \

@@ -33,7 +33,7 @@ dotfiles:
     src: config/mako
     dst: ~/.config/mako
 profiles:
-  lostecho-nuc11pahi5:
+  lostecho-atlas:
     dotfiles:
     - f_zshrc
     - d_hypr

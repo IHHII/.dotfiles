@@ -1,13 +1,14 @@
 # core
 archlinuxcn-keyring yay paru zsh curl \
 hyprland xdg-desktop-portal-hyprland \
-kitty mako swaylock-effects udiskie thunar\
+kitty mako swaylock-effects udiskie thunar \
 polkit-kde-agent wofi waybar-hyprland-git sddm btop timeshift \
 ttf-jetbrains-mono-nerd noto-fonts-emoji wqy-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont \
-blueman network-manager-applet ufw \
 fcitx5-im fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool fcitx5-pinyin-zhwiki \
 obsidian neofetch notion-app-enhanced neovim github-desktop-bin spotify motrix aria2 \
-kate okular jupyterlab \
+kate okular jupyterlab
+
+blueman ufw network-manager-applet
 
 # sound
 alsa-utils pulseaudio pulseaudio-alsa pamixer pavucontrol
