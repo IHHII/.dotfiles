@@ -131,9 +131,9 @@ alias hyprloadreload="curl -sSL https://raw.githubusercontent.com/Duckonaut/hypr
 alias pdf="zathura"
 
 # remotedesktop
-#alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f /sound"
-alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
-alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound"
+#alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f /sound"
+alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
+alias nucs="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound"
 
 # git alias
 alias gup="git pull --rebase"
