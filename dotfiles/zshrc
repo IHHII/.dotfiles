@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$HOME/.npm/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -73,7 +74,7 @@ ZSH_THEME="zhann"
 plugins=(
 	git
 	sudo
-	zsh-syntax-highlighting
+	F-Sy-H
 	zsh-autosuggestions
 	history-substring-search
 )
@@ -83,11 +84,12 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/home/lostecho/.local/bin:/home/lostecho/.cargo/bin:$PATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
-export EDITOR=vim
+export EDITOR=nvim
+#export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 #export all_proxy=http://192.168.31.40:7890
 #export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 
@@ -111,46 +113,41 @@ export EDITOR=vim
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # proxy alias
+#alias proxy="export all_proxy=http://127.0.0.1:7890" # for home network enviroment
 alias proxy="export all_proxy=http://192.168.31.40:7890" # for home network enviroment
 alias noproxy="export all_proxy=''" # cancel proxy mode
 
+# dordrop config file alias
 alias dotdrop="dotdrop --cfg=~/.dotfiles/config.yaml"
 
 # config file shortcut
+alias vim="nvim"
 alias vhypr="vim ~/.config/hypr/hyprland.conf" # edit hyprland config
 alias vzsh="vim ~/.zshrc" # edit zsh config
 alias szsh="source ~/.zshrc" # source the zshrc file
+alias hyprloadreload="curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash"
 
 # quick command
 alias pdf="zathura"
 
 # remotedesktop
-alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f"
-#alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.139 /f"
-alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:rdp.chipdale.top /f"
+#alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f /sound"
+alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
+alias nucx="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound /floatbar:sticky:off,default:hidden,show:window -themes +multitouch /video -wallpaper +nego +smart-sizing"
+alias nucwl="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound /floatbar:sticky:off,default:hidden,show:window -themes -toggle-fullscreen +multitouch /video -wallpaper +nego +smart-sizing"
 
-# pacman command
-#alias pins="sudo pacman -S"
-#alias psea="sudo pacman -Ss"
-#alias puni="sudo pacman -Rsn"
-alias yins="yay -S"
-alias ysea="yay -Ss"
-alias yuni="yay -Rsn"
-alias pins="paru -S"
-alias psea="paru -Ss"
-alias puni="paru -Rsn"
-alias psyuu="paru -Syuu"
+# git alias
+alias gup="git pull --rebase"
+alias gall="git add . && git commit -a -m 'update' && git push"
 
 # install software
-alias installaur="sudo pacman -S yay paru"
-alias installinput="sudo pacman -S wqy-microhei fcitx5-im fcitx5-chinese-addons fcitx5-material-color && yay -S fcitx5-input-support"
-alias installhyprland="yay -S hyprland-git kitty hyprpaper dunst polkit-kde-agent swww-git wlogout swaylock-effects ranger ttf-jetbrains-mono-nerd noto-fonts-emoji && paru -S waybar-hyprland wofi"
-alias installnotes="yay -S logseq-desktop obsidian-appimage zathura zathura-pdf-mupdf"
-alias installsddm="yay -S sddm sddm-sugar-candy-git"
-alias inatallother="yay -S blueman nm-connection-editor xf86-video-intel 7-zip-full neofetch acpilight google-chrome"
-alias installcode="sudo pacman -S ruby go jdk17-openjdk python-pip npm clang cargo"
+alias installpac="sudo pacman -S archlinuxcn-keyring yay paru zsh curl \
+hyprland xdg-desktop-portal-hyprland \
+kitty dunst swaylock-effects udiskie \
+polkit-kde-agent wofi waybar-hyprland-git sddm btop \
+ttf-jetbrains-mono-nerd noto-fonts-emoji wqy-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont \
+alsa-utils pulseaudio pamixer pavucontrol blueman network-manager-applet \
+fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool \
+obsidian neofetch notion-app-enhanced vscodium-bin "
+alias installyay="yay -S google-chrome dotdrop swww wlogout logseq-desktop-wayland-bin anytype-bin"
 
-# read books
-alias jvm=""
-alias java8sz=""
-alias postgresql=""
