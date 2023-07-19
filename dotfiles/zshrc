@@ -133,7 +133,8 @@ alias pdf="zathura"
 # remotedesktop
 #alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f /sound"
 alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
-alias nucs="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound"
+alias nucx="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound /floatbar:sticky:off,default:hidden,show:window -themes +multitouch /video -wallpaper +nego +smart-sizing"
+alias nucwl="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound /floatbar:sticky:off,default:hidden,show:window -themes -toggle-fullscreen +multitouch /video -wallpaper +nego +smart-sizing"
 
 # git alias
 alias gup="git pull --rebase"
