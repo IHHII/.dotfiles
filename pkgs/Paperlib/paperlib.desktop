@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Paperlib
+Exec=paperlib
+Terminal=false
+Type=Application
+Icon=paperlib
+StartupWMClass=Paperlib
+X-AppImage-Version=2.2.3
+Comment=A simple academic paper management tool.
+Categories=Utility;

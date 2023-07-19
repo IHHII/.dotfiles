@@ -1,0 +1,45 @@
+# Maintainer: elementh <hello@lucasmarino.me>
+#                                            
+# WARNING WARNING WARNING WARNING WARNING    
+# IMPORTANT: MIGRATION
+#                                            
+# If you are coming from the > 0.3.2 BETA please read the instructions:
+# 
+# 1. Install `anytype-legacy`
+# 2. Follow the instructions HERE: https://community.anytype.io/t/anytype-legacy-to-beta-migration-trail-guide/9274 
+#    UP to the point 2., BUT NOT 3.
+# 3. Now install `anytype-bin` (this package) and now you can follow point 3. and login with the recovery phrase.
+# 
+# Thanks.
+#                                            
+pkgname=paperlib
+pkgver=2.2.3
+pkgrel=1
+pkgdesc="An open-source academic paper management tool."
+arch=('x86_64')
+url="https://paperlib.app/"
+license=('GPL3')
+depends=('fuse')
+options=(!strip)
+optdepends=()
+provides=('paperlib')
+conflicts=('paperlib-bin'
+           'paperlib-appimage')
+_appimage="Paperlib-${pkgver}.AppImage"
+source=(
+    "Paperlib-${pkgver}.AppImage::https://paperlib.app/distribution/electron-linux/Paperlib_latest.AppImage"
+    "paperlib.desktop"
+    "paperlib.png"
+    )
+noextract=("${_appimage}")
+sha256sums=('714dd0e6da3616eadf105945e77ec7b59dcb975752cab00add95a1dfe5f53952'
+            '1cdc046db21e46aff6067dcc92393fdfa9ed46cfaee52221e0533d813d6fee81'
+            '5f74e4a4b4eb07c50c5573d28afcf4005c99da78b9edc8884157a24dffb0c9f8')
+
+package() {
+    install -Dm755 $_appimage "$pkgdir"/usr/bin/paperlib
+    chmod +x "${pkgdir}/usr/bin/paperlib"
+
+    install -Dm644 "paperlib.desktop"                    "${pkgdir}/usr/share/applications/paperlib.desktop"
+    install -Dm644 "paperlib.png"                        "${pkgdir}/usr/share/icons/hicolor/128x128/apps/paperlib.png"
+}
