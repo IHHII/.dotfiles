@@ -26,9 +26,6 @@ dotfiles:
   d_swaylock:
     src: config/swaylock
     dst: ~/.config/swaylock
-  f_software:
-    src: software
-    dst: ~/.software
   d_mako:
     src: config/mako
     dst: ~/.config/mako
@@ -41,5 +38,4 @@ profiles:
     - d_wofi
     - d_kitty
     - d_swaylock
-    - f_software
     - d_mako
