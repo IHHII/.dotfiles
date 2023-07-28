@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/home/lonelinster/.local/bin:/home/lonelinster/.cargo/bin:/home/lonelinster/.spicetify:$PATH"
+export PATH="/home/lonelinster/.local/bin:/home/lonelinster/.cargo/bin:$PATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -118,54 +118,17 @@ alias noproxy="export all_proxy=''" # cancel proxy mode
 alias dotdrop="dotdrop --cfg=~/.dotfiles/config.yaml"
 
 # config file shortcut
-alias vhypr="vim ~/.config/hypr/hyprland.conf" # edit hyprland config
-alias vzsh="vim ~/.zshrc" # edit zsh config
-alias szsh="source ~/.zshrc" # source the zshrc file
-
-# quick command
-alias pdf="zathura"
+alias vz="vim ~/.zshrc" # edit zsh config
+alias sz="source ~/.zshrc" # source the zshrc file
 
 # remotedesktop
-#alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f"
-alias nuc="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
-alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f"
-#alias nucs="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:rdp.chipdale.top /f"
-
-# pacman command
-#alias pins="sudo pacman -S"
-#alias psea="sudo pacman -Ss"
-#alias puni="sudo pacman -Rsn"
-alias yins="yay -S"
-alias ysea="yay -Ss"
-alias yuni="yay -Rsn"
-alias pins="paru -S"
-alias psea="paru -Ss"
-alias puni="paru -Rsn"
-alias psyuu="paru -Syuu"
-
-# install software
-alias installaur="sudo pacman -S yay paru"
-alias installinput="sudo pacman -S wqy-microhei fcitx5-im fcitx5-chinese-addons fcitx5-material-color && yay -S fcitx5-input-support"
-alias installhyprland="yay -S hyprland-git kitty hyprpaper dunst polkit-kde-agent swww-git wlogout swaylock-effects ranger ttf-jetbrains-mono-nerd noto-fonts-emoji && paru -S waybar-hyprland wofi"
-alias installnotes="yay -S logseq-desktop obsidian-appimage zathura zathura-pdf-mupdf"
-alias installsddm="yay -S sddm sddm-sugar-candy-git"
-alias inatallother="yay -S blueman nm-connection-editor xf86-video-intel 7-zip-full neofetch acpilight google-chrome"
-alias installcode="sudo pacman -S ruby go jdk17-openjdk python-pip npm clang cargo"
-
-# read books
-alias jvm=""
-alias java8sz=""
-alias postgresql=""
-
-# activate python venv
-alias pyvenv="source ~/pyvenv/bin/activate"
-alias depyvenv="deactivate"
+#alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f /sound"
+alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
+alias nucx="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound /floatbar:sticky:off,default:hidden,show:window -themes +multitouch /video -wallpaper +nego +smart-sizing"
+alias nucwl="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound /floatbar:sticky:off,default:hidden,show:window -themes -toggle-fullscreen +multitouch /video -wallpaper +nego +smart-sizing"
 
 # git alias
 alias gup="git pull --rebase"
 alias gall="git add . && git commit -a -m 'update' && git push"
 
-# init commandy
 
-#fcitx5 &
-export PATH=$PATH:/home/lonelinster/.spicetify
