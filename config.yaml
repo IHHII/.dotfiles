@@ -15,8 +15,12 @@ dotfiles:
     src: oh-my-zsh
     dst: ~/.oh-my-zsh
     chmod: '751'
+  d_applications:
+    src: local/share/applications
+    dst: ~/.local/share/applications
 profiles:
   penguin:
     dotfiles:
     - f_zshrc
     - d_oh-my-zsh
+    - d_applications

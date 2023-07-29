@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Logseq
+Exec=/usr/local/bin/logseq
+Terminal=false
+Type=Application
+Icon=~/.local/share/applications/Logseq.png
+StartupWMClass=Logseq
+X-AppImage-Version=0.9.11
+Comment=A privacy-first, open-source platform for knowledge management and collaboration.
+MimeType=x-scheme-handler/logseq
+Categories=Utility

@@ -88,7 +88,7 @@ export PATH="/home/lonelinster/.local/bin:/home/lonelinster/.cargo/bin:$PATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
-export EDITOR=vim
+export EDITOR=nvim
 #export all_proxy=http://192.168.31.40:7890
 #export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 
@@ -118,10 +118,12 @@ alias noproxy="export all_proxy=''" # cancel proxy mode
 alias dotdrop="dotdrop --cfg=~/.dotfiles/config.yaml"
 
 # config file shortcut
+alias vim="nvim"
 alias vz="vim ~/.zshrc" # edit zsh config
 alias sz="source ~/.zshrc" # source the zshrc file
 
 # remotedesktop
+alias remm="remmina -c .local/share/remmina/group_rdp_nuc_43-249-192-204-45561.remmina"
 #alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:NUC /f /sound"
 alias nuc="wlfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:192.168.31.15 /f /sound"
 alias nucx="xfreerdp /u:752549025@qq.com /p:nebkij-xevkec-Zyvha9 /v:43.249.192.204:45561 /f /sound /floatbar:sticky:off,default:hidden,show:window -themes +multitouch /video -wallpaper +nego +smart-sizing"
