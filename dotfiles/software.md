@@ -183,7 +183,7 @@ alsa-utils pulseaudio pulseaudio-alsa pamixer pavucontrol
 7. install note software
 ```zsh
 yay -S \
-obsidian nothon-app-enhanced typora-free\
+obsidian notion-app-enhanced typora-free \
 logseq-desktop-wayland-bin anytype-bin
 ```
 
