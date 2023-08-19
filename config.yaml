@@ -12,6 +12,6 @@ dotfiles:
     src: zshrc
     dst: ~/.zshrc
 profiles:
-  NUC:
+  lostecho-nuc11pahi5:
     dotfiles:
     - f_zshrc
