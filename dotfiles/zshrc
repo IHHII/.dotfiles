@@ -112,6 +112,7 @@ export EDITOR=nvim
 
 # proxy alias
 alias proxy="export all_proxy=http://192.168.31.40:7890" # for home network enviroment
+alias proxyl="export all_proxy=http://127.0.0.1:10809" # for home network enviroment
 alias noproxy="export all_proxy=''" # cancel proxy mode
 
 # dordrop config file alias
@@ -119,10 +120,10 @@ alias dotdrop="dotdrop --cfg=~/.dotfiles/config.yaml"
 
 # config file shortcut
 alias vim="nvim"
-alias vhypr="vim ~/.config/hypr/hyprland.conf" # edit hyprland config
-alias vzsh="vim ~/.zshrc" # edit zsh config
+alias vh="vim ~/.config/hypr/hyprland.conf" # edit hyprland config
+alias vz="vim ~/.zshrc" # edit zsh config
 alias szsh="source ~/.zshrc" # source the zshrc file
-alias hyprloadreload="curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash"
+#alias hyprloadreload="curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash"
 
 # quick command
 alias pdf="zathura"
