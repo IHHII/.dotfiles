@@ -13,5 +13,5 @@ THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f2)
 #    swww img -o DP-2 ~/.config/hypr/wallpaper.jpg
 #fi
 
-swww img -o DP-2 ~/.config/hypr/wallpaper-dark.jpg
-swww img -o DP-1 ~/.config/hypr/wallpaper-dark.jpg
+swww img -o DP-2 ~/.config/hypr/endeavouros-wallpaper.png
+swww img -o DP-1 ~/.config/hypr/endeavouros-wallpaper.png
