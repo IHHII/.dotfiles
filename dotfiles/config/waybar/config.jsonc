@@ -32,9 +32,9 @@
         //"pulseaudio_pamixer",
         //"pulseaudio_pamixer#microphone",
         //"custom/keyboard-layout",
-        "backlight#icon",
-        "backlight#value",
-        "custom/updates",
+        //"backlight#icon",
+        //"backlight#value",
+        //"custom/updates",
         "clock",
         "tray",
         //"custom/power",
@@ -75,9 +75,9 @@
       //"on-click": "playerctl previous",
       "on-click-right": "playerctl next",
       "format-icons": {
-        "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭 </span>",
-        "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭 </span>"
-      },
+        "Playing": "<span foreground='#E5B9C6'> 󰒮  󰒭 </span>",
+        "Paused": "<span foreground='#928374'> 󰒮 󰏥 󰒭 </span>"
+      }
     },
 
     "custom/playerlabel": {
@@ -90,9 +90,9 @@
       //"on-click": "playerctl previous",
       "on-click-right": "playerctl next",
       "format-icons": {
-        "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭 </span>",
-        "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭 </span>"
-      },
+        "Playing": "<span foreground='#E5B9C6'> 󰒮  󰒭 </span>",
+        "Paused": "<span foreground='#928374'> 󰒮 󰏥 󰒭 </span>"
+      }
     },
 
     // --------------------
@@ -193,7 +193,7 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -208,8 +208,8 @@
         "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
         "format-bluetooth": "{icon} {volume}%  {format_source}",
-        "format-bluetooth-muted": " {icon}  {format_source}",
-        "format-muted": " ",
+        "format-bluetooth-muted": "󰂲 {icon}  {format_source}",
+        "format-muted": " ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -223,7 +223,7 @@
         },
         "on-click": "pavucontrol",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%"
     },
     "pulseaudio_pamixer": {
         "format": "{icon}",
