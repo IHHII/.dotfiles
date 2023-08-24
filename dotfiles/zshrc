@@ -137,6 +137,7 @@ alias gall="git add . && git commit -am 'update' && git push"
 
 # archlinuxcn & alhp
 #
+# Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 # [archlinuxcn]
 # Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 #
@@ -159,16 +160,8 @@ alias gall="git add . && git commit -am 'update' && git push"
 # git clone https://github.com/z-shell/F-Sy-H.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/F-Sy-H
 
 # pacman install software
-alias pacmaninstall = "sudo pacman -S neovim base-devel zsh paru yay hyprland xdg-desktop-portal-hyprland wofi \
-kitty mako swaylock-effects udiskie thunar btop polkit-kde-agent waybar-hyprland-git sddm \
-ttf-jetbrains-mono-nerd noto-fonts-emoji wqy-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont \
-citx5-im fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool fcitx5-pinyin-zhwiki \
-network-manager-applet neofetch github-desktop-bin aria2 motrix zathura zathura-mu-pdf \
-kate okular jupyterlab obsidian mariadb mariadb-libs \
-clang go python-pip cargo npm jdk-openjdk"
-alias yayinstall="yay -S wlogout swww fcitx5-input-support rime-ice microsoft-edge-stable \
-visual-studio-code-bin ttf-wps-fonts wps-office-cn jetbrains-toolbox notion-app-enhanced \
-logseq-desktop-wayland-bin anytype-bin aliyunpan-odomu"
+alias pacmaninstall="sudo pacman -S neovim base-devel zsh paru yay hyprland xdg-desktop-portal-hyprland wofi kitty mako swaylock-effects udiskie thunar btop polkit-kde-agent waybar-hyprland-git sddm ttf-jetbrains-mono-nerd noto-fonts-emoji wqy-zenhei wqy-microhei wqy-microhei-lite wqy-bitmapfont fcitx5-im fcitx5-rime fcitx5-chinese-addons fcitx5-material-color fcitx5-configtool fcitx5-pinyin-zhwiki network-manager-applet neofetch github-desktop-bin aria2 motrix zathura zathura-pdf-mupdf kate okular jupyterlab obsidian mariadb mariadb-libs clang go python-pip cargo npm jdk-openjdk"
+alias yayinstall="yay -S wlogout swww fcitx5-input-support rime-ice microsoft-edge-stable visual-studio-code-bin ttf-wps-fonts wps-office-cn jetbrains-toolbox notion-app-enhanced logseq-desktop-wayland-bin anytype-bin aliyunpan-odomu"
 
 # hyprload
 # curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash

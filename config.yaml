@@ -29,6 +29,9 @@ dotfiles:
   d_mako:
     src: config/mako
     dst: ~/.config/mako
+  f_software.md:
+    src: software.md
+    dst: ~/software.md
 profiles:
   lostecho-nuc11pahi5:
     dotfiles:
@@ -39,3 +42,4 @@ profiles:
     - d_kitty
     - d_swaylock
     - d_mako
+    - f_software.md
