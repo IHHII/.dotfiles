@@ -33,7 +33,7 @@ dotfiles:
     src: software.md
     dst: ~/software.md
 profiles:
-  lostecho-atlas:
+  arch:
     dotfiles:
     - f_zshrc
     - d_hypr
