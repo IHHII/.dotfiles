@@ -9,7 +9,8 @@
     "modules-left": [
         "custom/launcher",
         "clock",
-        "wlr/workspaces",
+        //"wlr/workspaces",
+        "hyprland/workspaces",
         "wlr/taskbar",
         "hyprland/window"
         //"custom/playerctl",
@@ -68,6 +69,20 @@
             "10": []
         }
     },
+    "hyprland/workspaces": {
+    	"format": "{name}",
+    	"format-icons": {
+	    "active": "",
+      	    "default": "",
+      	    "persistent": ""
+    	},
+    	"on-scroll-up": "hyprctl dispatch workspace r-1",
+    	"on-scroll-down": "hyprctl dispatch workspace r+1",
+    	"all-outputs": false,
+    	//"persistent_workspaces": {
+      	//    "*": 5
+    	//}
+    },
     "custom/playerctl": {
       "format": "{icon}",
       "return-type": "json",
@@ -80,7 +95,7 @@
       "format-icons": {
         "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭 </span>",
         "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭 </span>"
-      },
+      }
     },
 
     "custom/playerlabel": {
