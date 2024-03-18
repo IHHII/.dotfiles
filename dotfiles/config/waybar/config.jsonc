@@ -43,12 +43,17 @@
         "tray",
         //"custom/power",
         //"custom/lock_screen",
+	"custom/notification",
         "custom/light_dark"
     ],
     "custom/launcher": {
-        "format": "  ",
+        "format": "   ",
         "on-click": "sh -c '(sleep 0.5s; pkill wofi || wofi -c ~/.config/wofi/config-lmenu)' & disown",
         "tooltip": false
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "{: %A, %e %B %Y}"
     },
     "wlr/workspaces": {
         "disable-scroll": true,
@@ -79,9 +84,9 @@
     	"on-scroll-up": "hyprctl dispatch workspace r-1",
     	"on-scroll-down": "hyprctl dispatch workspace r+1",
     	"all-outputs": false,
-    	//"persistent_workspaces": {
-      	//    "*": 5
-    	//}
+    	"persistent_workspaces": {
+      	    "*": 3
+    	}
     },
     "custom/playerctl": {
       "format": "{icon}",
@@ -110,7 +115,7 @@
       "format-icons": {
         "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭 </span>",
         "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭 </span>"
-      },
+      }
     },
 
     // --------------------
@@ -128,9 +133,9 @@
         "ignore-list": [
             "wofi"
         ],
-	    "app_ids-mapping": {
-	        "steam_app_39210": "Final Fantasy 14"
-	    }
+	"app_ids-mapping": {
+	   "steam_app_39210": "Final Fantasy 14"
+	}
     },
 
 
@@ -206,7 +211,7 @@
     },
      "battery": {
         "states": {
-            // "good": 95,
+            "good": 80,
             "warning": 30,
             "critical": 15
         },
@@ -226,7 +231,7 @@
         "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
         "format-bluetooth": " {volume}%", //"{icon}  {volume}%", //{format_source}",
-        "format-bluetooth-muted": " ", //" {icon}", //{format_source}",
+        "format-bluetooth-muted": " {icon}", //{format_source}",
         "format-muted": "",
         "format-source": " {volume}%",
         "format-source-muted": "",
@@ -241,7 +246,7 @@
         },
         "on-click": "pavucontrol",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%"
     },
     "pulseaudio_pamixer": {
         "format": "{icon}",
@@ -313,8 +318,28 @@
         "tooltip": false
     },
     "custom/light_dark": {
-        "format": "󰐾",
+        "format": "",
         "on-click": "~/.config/waybar/scripts/baraction light",
         "tooltip": false
-    }
+    },
+    "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  }
 }
