@@ -85,7 +85,7 @@
     	"on-scroll-down": "hyprctl dispatch workspace r+1",
     	"all-outputs": false,
     	"persistent_workspaces": {
-      	    "*": 3
+      	    "*": 1
     	}
     },
     "custom/playerctl": {

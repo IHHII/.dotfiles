@@ -128,6 +128,8 @@ alias vzsh="vim ~/.zshrc" # edit zsh config
 alias szsh="source ~/.zshrc" # source the zshrc file
 alias hyprloadreload="curl -sSL https://raw.githubusercontent.com/Duckonaut/hyprload/main/install.sh | bash"
 
+alias aria="aria2c -c -s16 -x16 -k1M"
+
 # quick command
 alias pdf="zathura"
 

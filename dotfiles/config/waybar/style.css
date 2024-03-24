@@ -13,7 +13,7 @@ window#waybar {
 }
 
 tooltip {
-    background: #1e1e2e;
+    background: #e7e7ec;
     opacity: 0.8;
     border-radius: 10px;
     border-width: 2px;
@@ -22,7 +22,7 @@ tooltip {
 }
 
 tooltip label{
-    color: #cdd6f4;
+    color: #2b2b2c;
 }
 
 #workspaces button {
@@ -69,7 +69,7 @@ tooltip label{
 #idle_inhibitor,
 #backlight {
     background: rgba(21, 18, 27, 0);
-    opacity: 1;
+    opacity: 0.8;
     padding: 0px 8px;
     margin: 0px 3px;
     border: 0px;
@@ -79,6 +79,7 @@ tooltip label{
     color: #e92d4d;
 }
 
+
 #workspaces {
     padding-right: 0px;
     padding-left: 5px;
@@ -86,8 +87,8 @@ tooltip label{
 
 #window {
     border-radius: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #custom-launch_firefox, 
